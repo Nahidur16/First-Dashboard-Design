@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <h1 class="logo">
+                <a href="index.html"> logo</a>
+            </h1>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <section class="container">
+                <div class="content">
+                    <h2>Welcome, <span> John </span> </h2>
+                    <p>Member since April 26, 2020</p>
+
+                    <div class="money">
+                        <div class="money-container">
+                            <div class="cash">
+                                <h3>Cash</h3>
+                                <span>$ 134</span>
+                            </div>
+                            <div class="points">
+                                <h3>Points</h3>
+                                <span>250</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="server">
+                <p> 12:3:4:14</p>
+            </div>
+            <section class="end-container">
+                <div class="inbox">
+                    <i class="fas fa-envelope"></i>
+                    <!--<p>Inbox</p>-->
+                </div>
+                <div class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <!--  <p>logout</p>-->
+                </div>
+
+            </section>
+        </div>
+    </header>
+    <!---HEADER END-->
+    <nav class="sidebar">
+        <div class="siderbar-menu">
+            <li class="item">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-desktop"></i> <span> Desktop</span>
+                </a>
+            </li>
+
+            <li class="item" id="profile">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-user-circle"></i><span>Profile</span>
+                </a>
+            </li>
+            <li class="item" id="survey">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-poll"></i> <span>Daily Surveys</span>
+                </a>
+            </li>
+            <li class="item" id="offerwall">
+                <a href="" class="item-btn">
+                    <i class="fab fa-buffer"></i> <span>Offerwall <i class="fas fa-caret-down"></i></span>
+                </a>
+                <div class="sub-item">
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Adwall</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Adgate</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Onewall</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Personacy</span></a>
+                </div>
+            </li>
+
+            <li class="item" id="ref">
+                <a href="" class="item-btn">
+                    <i class="fas fa-sync-alt"></i><span>Referel Program<i class="fas fa-caret-down"></i></span>
+                </a>
+                <div class="sub-item">
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Downloading</span>
+                    </a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Refeer</span>
+                    </a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Email Friend</span>
+                    </a>
+
+                </div>
+            </li>
+            <li class="item" id="contest">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-envelope-square"></i> <span> Contest <i class="fas fa-caret-down"></i> </span>
+                </a>
+                <div class="sub-item">
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Offer</span>
+                    </a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Referal</span>
+                    </a>
+                </div>
+            </li>
+            <li class="item" id="achivements">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-trophy"></i> <span>Achivements</span>
+                </a>
+            </li>
+
+            <li class="item" id="balance">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-coins"></i> <span>Withdraw Balance</span>
+                </a>
+            </li>
+
+            <li class="item" id="history">
+                <a href="" class="item-btn">
+                    <i class="far fa-user-circle"></i> <span>Account History <i class="fas fa-caret-down"></i></span>
+                </a>
+                <div class="sub-item">
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Balance</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Cash History</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Poinst History</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Convert Points</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Completed offers</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Pending offers</span></a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i> <span>Denied offers</span></a>
+                </div>
+            </li>
+
+            <li class="item" id="help">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-question-circle"></i> <span> Help & Support <i class="fas fa-caret-down"></i>
+                    </span>
+                </a>
+                <div class="sub-item">
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>FAQS</span>
+                    </a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Support</span>
+                    </a>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i>
+                        <span>Guide</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="item" id="news">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-newspaper"></i> <span>News and Announcements</span>
+                </a>
+            </li>
+
+            <li class="item" id="promo">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-coffee"></i> <span>Promo Code</span>
+                </a>
+            </li>
+            <li class="item" id="log-out">
+                <a href="#" class="item-btn">
+                    <i class="fas fa-sign-out-alt"></i> <span>Log Out</span>
+                </a>
+            </li>
+        </div>
+    </nav>
+</body>
+
+</html>

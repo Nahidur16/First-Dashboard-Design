@@ -1,0 +1,215 @@
+:root {
+  --color1: #053A40;
+  --color2: #63E4F2;
+  --color3: #66D9D9;
+  --white: white;
+  --black: rgb(24, 24, 24);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background-color: var(--color1);
+  position: fixed;
+  z-index: 1;
+  color: white;
+  top: 0;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+.header .wrapper .logo {
+  width: 10%;
+}
+
+.header .wrapper .logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header .wrapper .toggle {
+  position: absolute;
+  margin-left: 11rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header .wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  text-align: center;
+}
+
+.header .wrapper .container .content {
+  position: relative;
+}
+
+.header .wrapper .container .content h2 {
+  font-size: 2.9rem;
+  font-weight: 300;
+}
+
+.header .wrapper .container .content h2 span {
+  color: var(--color2);
+}
+
+.header .wrapper .container .content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header .wrapper .container .content .money {
+  position: absolute;
+  top: 0;
+  margin-left: 26rem;
+  margin-top: 1.7rem;
+}
+
+.header .wrapper .container .content .money .money-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .wrapper .container .content .money .money-container .cash {
+  margin-right: 2rem;
+}
+
+.header .wrapper .container .content .money .money-container .cash h3 {
+  font-size: 1.6rem;
+  color: var(--color3);
+}
+
+.header .wrapper .container .content .money .money-container .cash span {
+  font-size: 1.6rem;
+  color: var(--color3);
+}
+
+.header .wrapper .container .content .money .money-container .points h3 {
+  font-size: 1.6rem;
+  color: var(--color3);
+}
+
+.header .wrapper .container .content .money .money-container .points span {
+  font-size: 1.6rem;
+  color: var(--color3);
+}
+
+.header .wrapper .server {
+  margin-left: 13rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.header .wrapper .end-container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3rem;
+  cursor: pointer;
+}
+
+.header .wrapper .end-container .inbox {
+  font-size: 2.5rem;
+  background-color: var(--color3);
+  padding: .7rem 1.3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.header .wrapper .end-container .inbox:hover {
+  color: var(--color3);
+  background-color: var(--white);
+}
+
+.header .wrapper .end-container .logout {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: var(--color3);
+  padding: .7rem 1.3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.header .wrapper .end-container .logout:hover {
+  color: var(--color3);
+  background-color: var(--white);
+}
+/*# sourceMappingURL=style.css.map */
