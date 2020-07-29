@@ -1,0 +1,109 @@
+.sidebar {
+    position: fixed;
+    z-index: 10;
+    background-color: var(--color3);
+    top: 9.7rem;
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+
+    transition: all .5s ease;
+
+    .sidebar-menu {
+        overflow: hidden;
+        margin-left: 5rem;
+
+        .item {
+            width: 25rem;
+            overflow: hidden;
+        }
+
+
+    }
+
+}
+
+////iten btn style
+.item-btn {
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+    position: relative;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+
+    i {
+        margin-right: 1rem;
+    }
+
+    .fa-caret-down {
+        float: right;
+        font-size: 2rem;
+        margin-top: 6px;
+
+    }
+}
+
+
+.sub-item {
+    overflow: hidden;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color2);
+    transition: all .5s ease;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        position: relative;
+        color: var(--white);
+        white-space: nowrap;
+        font-size: 1.6rem;
+        padding: 2rem;
+        border-bottom: 1px solid white;
+
+        i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            margin-top: .5rem;
+        }
+    }
+}
+
+.main.collapse {
+    .sidebar {
+        width: 10rem;
+    }
+}
+
+.main.collapse {
+    .sidebar {
+        a span {
+            visibility: hidden;
+        }
+    }
+}
+
+.main.collapse {
+    .sidebar {
+        .item-btn {
+            font-size: 2.2rem;
+            padding: 1rem 2rem .3rem 2rem;
+        }
+    }
+}
+
+.main {
+    .sidebar {
+        .sidebar-menu {
+            .item {
+                &:target {
+                    .sub-item {
+                        max-height: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
